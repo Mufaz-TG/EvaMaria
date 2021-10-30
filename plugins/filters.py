@@ -108,7 +108,7 @@ async def addfilter(client, message):
     await add_filter(grp_id, text, reply_text, btn, fileid, alert)
 
     await message.reply_text(
-        f"Filter for  `{text}`  added in  **{title}**",
+        f"ഈ Filter `{text}` **{title}** ലോട്ടു ആഡ് ചെയ്തടുണ്ട്",
         quote=True,
         parse_mode="md"
     )
@@ -128,10 +128,10 @@ async def get_all(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Make sure I'm present in your group!!", quote=True)
+                await message.reply_text("ഞാൻ നിന്റെ ഗ്രൂപ്പിൽ ഉണ്ടോ എന്ന് നോക്കിക്കേ ❗️", quote=True)
                 return
         else:
-            await message.reply_text("I'm not connected to any groups!", quote=True)
+            await message.reply_text("എന്നെ ഒരു ഗ്രൂപ്പിൽ പോലും കണക്ട് ചെയ്തിട്ടില്ല 🙄", quote=True)
             return
 
     elif chat_type in ["group", "supergroup"]:
@@ -168,7 +168,7 @@ async def get_all(client, message):
                 )
             return
     else:
-        filterlist = f"There are no active filters in **{title}**"
+        filterlist = f"**{title}** ഇതിലിപ്പോ Active filters ഒന്നുമില്ല 🤭"
 
     await message.reply_text(
         text=filterlist,
@@ -189,10 +189,10 @@ async def deletefilter(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Make sure I'm present in your group!!", quote=True)
+                await message.reply_text("ഞാൻ നിന്റെ ഗ്രൂപ്പിൽ ഉണ്ടോ എന്ന് നോക്കിക്കേ ❗️", quote=True)
                 return
         else:
-            await message.reply_text("I'm not connected to any groups!", quote=True)
+            await message.reply_text("എന്നെ ഒരു ഗ്രൂപ്പിൽ പോലും കണക്ട് ചെയ്തിട്ടില്ല 🙄", quote=True)
 
     elif chat_type in ["group", "supergroup"]:
         grp_id = message.chat.id
@@ -238,10 +238,10 @@ async def delallconfirm(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Make sure I'm present in your group!!", quote=True)
+                await message.reply_text("ഞാൻ നിന്റെ ഗ്രൂപ്പിൽ ഉണ്ടോ എന്ന് നോക്കിക്കേ ❗️", quote=True)
                 return
         else:
-            await message.reply_text("I'm not connected to any groups!", quote=True)
+            await message.reply_text("എന്നെ ഒരു ഗ്രൂപ്പിൽ പോലും കണക്ട് ചെയ്തിട്ടില്ല 🙄", quote=True)
             return
 
     elif chat_type in ["group", "supergroup"]:
@@ -254,10 +254,10 @@ async def delallconfirm(client, message):
     st = await client.get_chat_member(grp_id, userid)
     if (st.status == "creator") or (str(userid) in ADMINS):
         await message.reply_text(
-            f"This will delete all filters from '{title}'.\nDo you want to continue??",
+            f"ഇത് '{title}' ഉള്ള എല്ലാ Filter മെസ്സേജിസും ഡിലീറ്റ് ചെയ്യും.\nനിനക്കത് ഡിലീറ്റ് ചെയണോ?",
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton(text="YES",callback_data="delallconfirm")],
-                [InlineKeyboardButton(text="CANCEL",callback_data="delallcancel")]
+                [InlineKeyboardButton(text="Delall ⚠️",callback_data="delallconfirm")],
+                [InlineKeyboardButton(text="Cancel ❌️",callback_data="delallcancel")]
             ]),
             quote=True
         )
