@@ -19,53 +19,54 @@ class script(object):
 - Filter is the feature were users can set automated replies for a particular keyword and tessa will respond whenever a keyword is found the message
 
 <b>NOTE:</b>
-1. eva maria should have admin privillage.
-2. only admins can add filters in a chat.
-3. alert buttons have a limit of 64 characters.
+1. <a href=https://t.me/Cv_links_project7_bot>𝖩𝗈𝗁𝗇 𝖢𝖾𝗇𝖺</a>""" 𝗌𝗁𝗈𝗎𝗅𝖽 𝗁𝖺𝗏𝖾 𝖺𝖽𝗆𝗂𝗇 𝗉𝗋𝗂𝗏𝗂𝗅𝗅𝖺𝗀𝖾.
+2. 𝖮𝗇𝗅𝗒 𝖺𝖽𝗆𝗂𝗇𝗌 𝖼𝖺𝗇 𝖺𝖽𝖽 𝖿𝗂𝗅𝗍𝖾𝗋𝗌 𝗂𝗇 𝖺 𝖼𝗁𝖺𝗍.
+3. 𝖠𝗅𝖾𝗋𝗍 𝖻𝗎𝗍𝗍𝗈𝗇𝗌 𝗁𝖺𝗏𝖾 𝖺 𝗅𝗂𝗆𝗂𝗍 𝗈𝖿 64 𝖼𝗁𝖺𝗋𝖺𝖼𝗍𝖾𝗋𝗌.
 
-<b>Commands and Usage:</b>
-• /filter - <code>add a filter in chat</code>
-• /filters - <code>list all the filters of a chat</code>
-• /del - <code>delete a specific filter in chat</code>
-• /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
-    BUTTON_TXT = """Help: <b>Buttons</b>
+<b>𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖺𝗇𝖽 𝖴𝗌𝖺𝗀𝖾:</b>
+• /filter - <code> 𝖺𝖽𝖽 𝖺 𝖿𝗂𝗅𝗍𝖾𝗋 𝗂𝗇 𝖼𝗁𝖺𝗍
+• /filters - <code> 𝗅𝗂𝗌𝗍 𝖺𝗅𝗅 𝗍𝗁𝖾 𝖿𝗂𝗅𝗍𝖾𝗋𝗌 𝗈𝖿 𝖺 𝖼𝗁𝖺𝗍
+• /del - <code> 𝖽𝖾𝗅𝖾𝗍𝖾 𝖺 𝗌𝗉𝖾𝖼𝗂𝖿𝗂𝖼 𝖿𝗂𝗅𝗍𝖾𝗋 𝗂𝗇 𝖼𝗁𝖺𝗍
+• /delall - <code> 𝖽𝖾𝗅𝖾𝗍𝖾 𝗍𝗁𝖾 𝗐𝗁𝗈𝗅𝖾 𝖿𝗂𝗅𝗍𝖾𝗋𝗌 𝗂𝗇 𝖺 𝖼𝗁𝖺𝗍 (𝖼𝗁𝖺𝗍 𝗈𝗐𝗇𝖾𝗋 𝗈𝗇𝗅𝗒)
+"""
+  BUTTON_TXT = """Help: <b>𝖡𝗎𝗍𝗍𝗈𝗇𝗌</b>
 
-- Eva Maria Supports both url and alert inline buttons.
+- 𝖩𝗈𝗁𝗇 𝖢𝖾𝗇𝖺 𝖲𝗎𝗉𝗉𝗈𝗋𝗍𝗌 𝖻𝗈𝗍𝗁 𝗎𝗋𝗅 𝖺𝗇𝖽 𝖺𝗅𝖾𝗋𝗍 𝗂𝗇𝗅𝗂𝗇𝖾 𝖻𝗎𝗍𝗍𝗈𝗇𝗌.
 
-<b>NOTE:</b>
-1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. Eva Maria supports buttons with any telegram media type.
-3. Buttons should be properly parsed as markdown format
+<b>𝖭𝖮𝖳𝖤:</b>
+1. 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝗐𝗂𝗅𝗅 𝗇𝗈𝗍 𝖺𝗅𝗅𝗈𝗐𝗌 𝗒𝗈𝗎 𝗍𝗈 𝗌𝖾𝗇𝖽 𝖻𝗎𝗍𝗍𝗈𝗇𝗌 𝗐𝗂𝗍𝗁𝗈𝗎𝗍 𝖺𝗇𝗒 𝖼𝗈𝗇𝗍𝖾𝗇𝗍, 𝗌𝗈 𝖼𝗈𝗇𝗍𝖾𝗇𝗍 𝗂𝗌 𝗆𝖺𝗇𝖽𝖺𝗍𝗈𝗋𝗒.
+2. 𝖩𝗈𝗁𝗇 𝖢𝖾𝗇𝖺 𝗌𝗎𝗉𝗉𝗈𝗋𝗍𝗌 𝖻𝗎𝗍𝗍𝗈𝗇𝗌 𝗐𝗂𝗍𝗁 𝖺𝗇𝗒 𝗍𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝗆𝖾𝖽𝗂𝖺 𝗍𝗒𝗉𝖾.
+3. 𝖡𝗎𝗍𝗍𝗈𝗇𝗌 𝗌𝗁𝗈𝗎𝗅𝖽 𝖻𝖾 𝗉𝗋𝗈𝗉𝖾𝗋𝗅𝗒 𝗉𝖺𝗋𝗌𝖾𝖽 𝖺𝗌 𝗆𝖺𝗋𝗄𝖽𝗈𝗐𝗇 𝖿𝗈𝗋𝗆𝖺𝗍
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https//t.me/EvaMariaBot)</code>
+<code>[Button Text](buttonurl:https//t.me/cv_updatez)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
     AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
 
 <b>NOTE:</b>
-1. Make me the admin of your channel if it's private.
-2. make sure that your channel does not contains cam rip, porn and fake files.
-3. Forward the last message to me with quotes.
- I'll add all the files in that channel to my db."""
+1. 𝖬𝖺𝗄𝖾 𝗆𝖾 𝗍𝗁𝖾 𝖺𝖽𝗆𝗂𝗇 𝗈𝖿 𝗒𝗈𝗎𝗋 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 𝗂𝖿 𝗂𝗍'𝗌 𝗉𝗋𝗂𝗏𝖺𝗍𝖾.
+2. 𝗆𝖺𝗄𝖾 𝗌𝗎𝗋𝖾 𝗍𝗁𝖺𝗍 𝗒𝗈𝗎𝗋 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 𝖽𝗈𝖾𝗌 𝗇𝗈𝗍 𝖼𝗈𝗇𝗍𝖺𝗂𝗇𝗌 𝖼𝖺𝗆 𝗋𝗂𝗉, 𝗉𝗈𝗋𝗇 𝖺𝗇𝖽 𝖿𝖺𝗄𝖾 𝖿𝗂𝗅𝖾𝗌.
+3. 𝖥𝗈𝗋𝗐𝖺𝗋𝖽 𝗍𝗁𝖾 𝗅𝖺𝗌𝗍 𝗆𝖾𝗌𝗌𝖺𝗀𝖾 𝗍𝗈 𝗆𝖾 𝗐𝗂𝗍𝗁 𝗊𝗎𝗈𝗍𝖾𝗌.
+ 𝖨'𝗅𝗅 𝖺𝖽𝖽 𝖺𝗅𝗅 𝗍𝗁𝖾 𝖿𝗂𝗅𝖾𝗌 𝗂𝗇 𝗍𝗁𝖺𝗍 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 𝗍𝗈 𝗆𝗒 𝖽𝖻."""
     CONNECTION_TXT = """Help: <b>Connections</b>
 
-- Used to connect bot to PM for managing filters 
-- it helps to avoid spamming in groups.
+- 𝖴𝗌𝖾𝖽 𝗍𝗈 𝖼𝗈𝗇𝗇𝖾𝖼𝗍 𝖻𝗈𝗍 𝗍𝗈 𝖯𝖬 𝖿𝗈𝗋 𝗆𝖺𝗇𝖺𝗀𝗂𝗇𝗀 𝖿𝗂𝗅𝗍𝖾𝗋𝗌 
+- 𝗂𝗍 𝗁𝖾𝗅𝗉𝗌 𝗍𝗈 𝖺𝗏𝗈𝗂𝖽 𝗌𝗉𝖺𝗆𝗆𝗂𝗇𝗀 𝗂𝗇 𝗀𝗋𝗈𝗎𝗉𝗌.
 
 <b>NOTE:</b>
-1. Only admins can add a connection.
-2. Send <code>/connect</code> for connecting me to ur PM
+1. 𝖮𝗇𝗅𝗒 𝖺𝖽𝗆𝗂𝗇𝗌 𝖼𝖺𝗇 𝖺𝖽𝖽 𝖺 𝖼𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗈𝗇.
+2. 𝖲𝖾𝗇𝖽 <code>/𝖼𝗈𝗇𝗇𝖾𝖼𝗍</code> 𝖿𝗈𝗋 𝖼𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗇𝗀 𝗆𝖾 𝗍𝗈 𝗎𝗋 𝖯𝖬
 
 <b>Commands and Usage:</b>
-• /connect  - <code>connect a particular chat to your PM</code>
-• /disconnect  - <code>disconnect from a chat</code>
-• /connections - <code>list all your connections</code>"""
+• /connections /𝖼𝗈𝗇𝗇𝖾𝖼𝗍  - <code>𝖼𝗈𝗇𝗇𝖾𝖼𝗍 𝖺 𝗉𝖺𝗋𝗍𝗂𝖼𝗎𝗅𝖺𝗋 𝖼𝗁𝖺𝗍 𝗍𝗈 𝗒𝗈𝗎𝗋 𝖯𝖬</code>
+• /𝖽𝗂𝗌𝖼𝗈𝗇𝗇𝖾𝖼𝗍  - <code>𝖽𝗂𝗌𝖼𝗈𝗇𝗇𝖾𝖼𝗍 𝖿𝗋𝗈𝗆 𝖺 𝖼𝗁𝖺𝗍</code>
+• /𝖼𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗈𝗇𝗌 - <code>𝗅𝗂𝗌𝗍 𝖺𝗅𝗅 𝗒𝗈𝗎𝗋 𝖼𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗈𝗇𝗌</code>
+"""
     EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
 
 <b>NOTE:</b>
-these are the extra features of tessa
 
 <b>Commands and Usage:</b>
 • /id - <code>get id of a specifed user.</code>
