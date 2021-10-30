@@ -127,7 +127,7 @@ async def broadcast_messages(user_id, message):
 def get_size(size):
     """Get size in readable format"""
 
-    units = ["Bytes", "KB", "MB", "GB", "TB", "PB", "EB"]
+    units = "Bytes", "KB", "MB", "GB", "TB", "PB", "EB"
     size = float(size)
     i = 0
     while size >= 1024.0 and i < len(units):
