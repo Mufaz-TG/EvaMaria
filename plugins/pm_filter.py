@@ -567,4 +567,5 @@ async def auto_filter(client, message):
             await message.reply_text(f"🎬 Title: <a href={imdb['url']}>{imdb.get('title')}</a>\n🎭 Genres: {imdb.get('genres')}\n📆 Year: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>\n🌟 Rating: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a>/10\n🗣️ Requested BY {message.from_user.mention}\n\n★ {message.chat.title} ♻️</b>", reply_markup=InlineKeyboardMarkup(btn))
         else:
             await message.reply_text(f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ </b>", reply_markup=InlineKeyboardMarkup(btn))
-        
+            await asyncio.sleep(20)
+            await message.delete()
