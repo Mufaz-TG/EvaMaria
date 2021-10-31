@@ -10,10 +10,8 @@ class script(object):
 ✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
 ✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
-    SOURCE_TXT = """<b>𝖨 𝖺𝗆 𝖭𝗈𝗍 𝖠𝗇 𝖮𝗉𝖾𝗇 𝖲𝗈𝗎𝗋𝖼𝖾 𝖡𝗈𝗍 !</b>
+    SOURCE_TXT = """<b>𝖨 𝖺𝗆 𝖭𝗈𝗍 𝖠𝗇 𝖮𝗉𝖾𝗇 𝖲𝗈𝗎𝗋𝖼𝖾 𝖡𝗈𝗍 !</b>"""
 
-<b>DEVS:</b>
-- <a href=https://t.me/joel_tg>𝖩𝗈𝖾𝗅 𝖳𝖦</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and tessa will respond whenever a keyword is found the message
@@ -38,7 +36,7 @@ class script(object):
 3. 𝖡𝗎𝗍𝗍𝗈𝗇𝗌 𝗌𝗁𝗈𝗎𝗅𝖽 𝖻𝖾 𝗉𝗋𝗈𝗉𝖾𝗋𝗅𝗒 𝗉𝖺𝗋𝗌𝖾𝖽 𝖺𝗌 𝗆𝖺𝗋𝗄𝖽𝗈𝗐𝗇 𝖿𝗈𝗋𝗆𝖺𝗍
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https//t.me/cv_updatez)</code>
+<code>[Button Text](buttonurl:https://t.me/cv_updatez)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
